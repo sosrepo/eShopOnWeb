@@ -9,7 +9,7 @@ env:
   LOCATION: westeurope
   TEMPLATE-FILE: .azure/bicep/webapp.bicep
   SUBSCRIPTION-ID: 11506166-0cb3-4859-a861-acdf8dfdba02
-  WEBAPP-NAME: az400-webapp-test
+  WEBAPP-NAME: az400-webapp-testsosrepo
 
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '8.0.1'
+        dotnet-version: '7.0.x'
         include-prerelease: true
     #Build/Test/Publish the .net project
     - name: Build with dotnet
